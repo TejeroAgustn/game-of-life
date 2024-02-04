@@ -110,6 +110,7 @@
                 <version>2.8.2</version>
             </plugin>
 
+
             <plugin>
                 <groupId>com.jelastic</groupId>
                 <artifactId>jelastic-maven-plugin</artifactId>
@@ -122,8 +123,14 @@
                     <api_hoster>app.jelastic.servint.net</api_hoster>
                 </configuration>
             </plugin>
+
         </plugins>
-        
+
+        <pluginManagement>
+            <plugins>
+
+            </plugins>
+        </pluginManagement>
         <extensions>
             <extension>
                 <groupId>org.apache.maven.wagon</groupId>
@@ -132,7 +139,10 @@
             </extension>
         </extensions>
     </build>
-
+    <dependencyManagement>
+        <dependencies>
+        </dependencies>
+    </dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
